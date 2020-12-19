@@ -1,5 +1,5 @@
 # Cyber-Security
-![](Diagram/
+![](Diagram/Network_diagram.pdf)
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
