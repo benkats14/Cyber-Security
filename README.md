@@ -1,5 +1,6 @@
 # Cyber-Security
-![](Diagram/network.png)
+<img src="https://github.com/benkats14/Cyber-Security/blob/main/Diagrams/NW.png">
+
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
@@ -36,7 +37,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web-1     |Gateway  |10.0.0.5 |Linux|
 | Web-2    |Gateway  |10.0.0.6 |Linux|
 | Web-3    |Gateway  |10.0.09  |Linux|
-| Elk         |Gateway  |10.1.0.4  |Linux|
+| Elk         |Gateway  |10.1.0.4  |Linux|00
 
 ### Access Policies
 
