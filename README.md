@@ -21,9 +21,11 @@ Availablity// We use SSH private key, and jumbox acts as a gateway to the other 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-What does Filebeat watch for? Filebeat watches for log files/locations and collects log events.
+What does Filebeat watch for? 
+Filebeat watches for log files/locations and collects log events.
 
-What does Metricbeat record? Can install on your servers to periodically collect metrics from the operating system and from services running on the server.
+What does Metricbeat record? 
+Can install on your servers to periodically collect metrics from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -77,8 +79,11 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 -List the IP addresses of the machines you are monitoring
+
 -Web-1| 10.0.0.5|
+
 -Web-2|10.0.0.6|
+
 -Web-3|10.0.0.9|
 
 We have installed the following Beats on these machines:
