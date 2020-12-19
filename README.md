@@ -1,5 +1,5 @@
 # Cyber-Security
-<img src="https://github.com/
+<img src=https://github.com/benkats14/Cyber-Security/blob/main/Diagrams/Network%20diagram.pdf>
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
