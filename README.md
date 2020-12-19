@@ -1,5 +1,5 @@
 # Cyber-Security
-<img src="https://github.com/benkats14/Cyber-Security/blob/main/Diagrams/Network%20diagram.pdf">
+<img src="https://github.com/benkats14/Cyber-Security/blob/main/Diagrams/Network_diagram.pdf">
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
@@ -14,11 +14,15 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+
+What aspect of security do load balancers protect? What is the advantage of a jump box?
+
 Availablity// We use SSH private key, and jumbox acts as a gateway to the other Vm on your created network. This is advantageous cuase it funnels all traffic through jumpbox only secure connections from allowed ip address using a SSH key.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
+
 What does Filebeat watch for? Filebeat watches for log files/locations and collects log events.
+
 What does Metricbeat record? Can install on your servers to periodically collect metrics from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.
@@ -37,11 +41,11 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 75.7.117.107
+ 75.7.117.107
 
 Machines within the network can only be accessed by SSH.
--Which machine did you allow to access your ELK VM? What was its IP address?
-- Jump_Box                      10.0.0.7
+Which machine did you allow to access your ELK VM? What was its IP address?
+Jump_Box                      10.0.0.7
 
 A summary of the access policies in place can be found in the table below.
 
@@ -51,13 +55,13 @@ A summary of the access policies in place can be found in the table below.
 |Web-1   |No |10.0.0.7|
 |Web-2   |No|10.0.0.7|
 |Web-3   |No|10.0.0.7|
-|Elk        |No|10.0.07|
+|Elk      |No|10.0.07|
 
 ### Elk Configuration
-
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+
 What is the main advantage of automating configuration with Ansible?
-- you can put commands into many servers from a single playbook
+-you can put commands into many servers from a single playbook
 
 The playbook implements the following tasks:
 -In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
@@ -69,8 +73,6 @@ The playbook implements the following tasks:
 - Download and launch a docker elk container 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-![https://drive.google.com/drive/folders/18J3k2OTMh2AUXt8iC7O1hnIT3KYUIwQ-?usp=sharing)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -113,11 +115,14 @@ SSH into the control node and follow the steps below:
 	anisble-playbook-metricbeat-playbook.yml (webservers)
 -Navigate to htpp://40.88.8.180:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- Which file is the playbook? Where do you copy it?
---/etc/ansible/roles/filebeat-config.yml
+Answer the following questions to fill in the blanks:
+
+-Which file is the playbook? Where do you copy it?
+-/etc/ansible/roles/filebeat-config.yml
+
 - Which file do you update to make Ansible run the playbook on a specific machine?
 - /etc/ansible/hosts
+
  How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 -you specify the group [webservers] or [elk] at the end of the ansible-playbook command 
 
